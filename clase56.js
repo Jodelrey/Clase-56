@@ -21,16 +21,17 @@ const persona = {
 //Clases
 //Una clase se define con la palabra "class", y por convencion se escribe con PascalCase (para indicar que es una clase y no una variable). Dentro se definen las propiedades que va a tener 
 //Es una abstraccion, es como una plantilla, molde o plano de algo. No existe, comienza a existir cuando creamos una version de ella (instanciar una clase). 
-//La clase de la persona viene a ser el concepto de la persona, no es una persona. ////Es una idea de algo que tiene que tener ciertas propiedades y ciertos metodos. Pero no existe hasta que no creamos/instanciamos versiones de ella
+//La clase de la persona viene a ser el concepto de la persona, no es una persona. 
+//Es una idea de algo que tiene que tener ciertas propiedades y ciertos metodos. Pero no existe hasta que no creamos/instanciamos versiones de ella
 //Una instancia se crea con la palabra new. ///Cada instancia es algo independiente, por mas que compartan concepto general
-//Funcion constructora es una funcion que se ejecuta cuando se instancia una clase. Los parentesis llaman a la funcion constructora 
+//Funcion constructora es una funcion que se ejecuta cuando se instancia una clase. Los parentesis llaman primero a la funcion constructora 
 //Para agregarle propiedades
 //this representa la instancia sobre la que estoy trabajando. Puede dentro de si misma acceder a sus propiedades. Es una forma de referenciarse a si mismo
 //
 class Persona {
     constructor(nombre, apellido, nacimiento){
-        this.nombre = nombre,
-        this.apellido = apellido,
+        this.nombre = nombre
+        this.apellido = apellido
         this.nacimiento = nacimiento
     }
 }
@@ -42,8 +43,8 @@ const juana = new Persona("Juana", "Garcia", new Date(1990, 1, 10))
 //Para definirla:
 class Persona {
     constructor(nombre, apellido, nacimiento){
-        this.nombre = nombre,
-        this.apellido = apellido,
+        this.nombre = nombre
+        this.apellido = apellido
         this.nacimiento = nacimiento
     }
     saludar = (saludo = "Hola") => {
@@ -78,8 +79,8 @@ class Persona {
     #nacimiento
     #dinero
     constructor(nombre, apellido, nacimiento){
-        this.#nombre = nombre,
-        this.#apellido = apellido,
+        this.#nombre = nombre
+        this.#apellido = apellido
         this.#nacimiento = nacimiento
         this.#dinero = 1000
     }
